@@ -1,6 +1,6 @@
-ICA02 - Gruppe 11
+                                                          ICA02 - Gruppe 11
  
-Oppgave 1
+                                                         Oppgave 1:
  
 
 
@@ -47,7 +47,7 @@ Kilde : https://neosmart.net/wiki/mbr-boot-process/
 
 
 
-Oppgave 2
+                                                         Oppgave 2
  
 Først så begynner vi med å opprette en fil som heter “hello.go” på server.
 
@@ -71,7 +71,10 @@ Først så begynner vi med å opprette en fil som heter “hello.go” på serve
  
 Nå er programmet overført fra server til lokal maskin.
  
-Oppgave 3
+                                                         Oppgave 3
+                                                         
+                                                         
+                                                                                                                 
 skriv sum_tests_ og tilsvarende test-funksjoner TestSum for følgende typer i golang: uint32, int32, int64, float64 (følg eksemplene i filene) - lag tester, som produserer “FAIL” og forklar
 Testene produserer feil fordi summen av tallene er større enn hva typen klarer. For eksempel uint32 kan ikke ha tall mindre enn 0 og større enn 4294967295. Så om vi summerer to tall under 0  ved bruk av uint32 summer funksjonen vil testen produsere en FAIL: 
 
