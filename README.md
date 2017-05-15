@@ -1,9 +1,8 @@
                                                           ICA02 - Gruppe 11
  
-                                                         Oppgave 1:
- 
 
 
+                                                         Oppgave 1
 Hvor mange prosesser som kjører på din datamaskin?
 174
  
