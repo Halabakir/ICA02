@@ -1,16 +1,18 @@
-package algorithms
+package sorting
 
 import (
 	"math/rand"
 	"reflect"
 	"testing"
 	"time"
+	"./"
 )
 
 // https://golang.org/doc/effective_go.html#init
 func init() {
 	seed := time.Now().Unix()
 	rand.Seed(seed)
+
 }
 
 func perm(n int) (out []int) {
@@ -40,7 +42,18 @@ func benchmarkBSort(i int, b *testing.B) {
 		b.StopTimer()
 		values := perm(i)
 		b.StartTimer()
-		benchmarkBSortModified(values)
+		sorting.Bubble_sort(values)
+
+	}
+}
+
+func benchmarkBSortMod(i int, b *testing.B) {
+	for j := 0; j < b.N; j++ {
+		b.StopTimer()
+		values := perm(i)
+		b.StartTimer()
+		sorting.Bubble_sort_modified(values)
+
 	}
 }
 
@@ -49,7 +62,7 @@ func TestQSort(t *testing.T) {
 	values := []int{9, 1, 20, 3, 6, 7}
 	expected := []int{1, 3, 6, 7, 9, 20}
 
-	QSort(values)
+	sorting.QSort(values)
 
 	if !reflect.DeepEqual(values, expected) {
 		t.Fatalf("expected %d, actual is %d", 1, values[0])
@@ -73,6 +86,6 @@ func benchmarkQSort(i int, b *testing.B) {
 		b.StopTimer()
 		values := perm(i)
 		b.StartTimer()
-		QSort(values)
+		sorting.QSort(values)
 	}
 }
