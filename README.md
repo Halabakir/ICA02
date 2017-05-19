@@ -109,9 +109,11 @@ I kommandolinjen
                                                           Oppgave 4
                                                           
 - Se mappe "Oppgave 4"
+I følgende mappe er det en eksempel på en benchmark test, vi har ikke implementert en grafisk forestilling av testen, men testen kan kjøres ved: go test //testfil
+
 
 
                                                           Oppgave 5
-- Se mappe "Oppgave 5"                                                          
+- Se mappe for oppgave 5                                                         
  
 
