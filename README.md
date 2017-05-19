@@ -91,14 +91,15 @@ Nå er programmet overført fra server til lokal maskin.
                                                          
                                                                                                                  
 skriv sum_tests_ og tilsvarende test-funksjoner TestSum for følgende typer i golang: uint32, int32, int64, float64 (følg eksemplene i filene) - lag tester, som produserer “FAIL” og forklar
-Testene produserer feil fordi summen av tallene er større enn hva typen klarer. For eksempel uint32 kan ikke ha tall mindre enn 0 og større enn 4294967295. Så om vi summerer to tall under 0  ved bruk av uint32 summer funksjonen vil testen produsere en FAIL: 
 
 
+- Testene produserer feil fordi summen av tallene er større enn hva typen klarer. For eksempel uint32 kan ikke ha tall mindre enn 0 og større enn 4294967295. Så om vi summerer to tall under 0  ved bruk av uint32 summer funksjonen vil testen produsere en FAIL: 
 
-Testen viser at minus tallene “overflows” og kan dermed ikke brukes med uint32.
+- Testen viser at minus tallene “overflows” og kan dermed ikke brukes med uint32.
  
 Foreslå og gjerne implementer en løsning som gjør at bruken av deres pakke er trygg for brukerne.
-For å lage en trygg pakke gjorde vi det slik at pakken kun bruker float64 til å summere tall og gi resultat. float64 er den typen som tar mest mulige input, derfor vil den kunne summere alle tall innenfor de andre typene, itillegg til sin egen grense, som er på Slik:
+
+- For å lage en trygg pakke gjorde vi det slik at pakken kun bruker float64 til å summere tall og gi resultat. float64 er den typen som tar mest mulige input, derfor vil den kunne summere alle tall innenfor de andre typene, itillegg til sin egen grense, som er på Slik:
 
 I kommandolinjen
 
