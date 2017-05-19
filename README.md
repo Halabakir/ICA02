@@ -105,4 +105,12 @@ I kommandolinjen
 // Screenshot til oppgaven; http://imgur.com/a/Ch9oC
  
  
+                                                          Oppgave 4
+                                                          
+- Se mappe "Oppgave 4"
+
+
+                                                          Oppgave 5
+- Se mappe "Oppgave 5"                                                          
+ 
 
